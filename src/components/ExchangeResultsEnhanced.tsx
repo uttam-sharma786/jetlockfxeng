@@ -82,35 +82,37 @@ const ExchangeResultsEnhanced = () => {
       {exchangeBureaus.map((bureau, index) => (
         <Card 
           key={bureau.id} 
-          className={`p-6 transition-all duration-300 hover:shadow-strong hover:scale-[1.01] transform will-change-transform ${
+          className={`p-4 md:p-6 transition-all duration-300 hover:shadow-strong hover:scale-[1.01] transform will-change-transform ${
             bureau.isRecommended ? 'ring-2 ring-primary/20 bg-gradient-to-r from-primary/5 to-accent/5' : 'bg-card shadow-medium border border-border/50 backdrop-blur-sm'
           }`}
           style={{ animationDelay: `${index * 100}ms` }}
         >
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex items-center space-x-3 md:space-x-4">
               {/* Enhanced Icon */}
-              <div className="w-14 h-14 bg-gradient-subtle rounded-xl flex items-center justify-center text-2xl shadow-medium">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-subtle rounded-xl flex items-center justify-center text-xl md:text-2xl shadow-medium">
                 {bureau.icon}
               </div>
               
               {/* Enhanced Info */}
-              <div>
-                <div className="flex items-center space-x-3 mb-2">
-                  <h3 className="font-bold text-xl text-card-foreground">{bureau.name}</h3>
-                  {bureau.isRecommended && (
-                    <Badge variant="secondary" className="bg-primary text-primary-foreground font-medium">
-                      {t('results.recommended')}
-                    </Badge>
-                  )}
-                  {bureau.verified && (
-                    <Badge variant="outline" className="border-accent text-accent">
-                      <Shield className="h-3 w-3 mr-1" />
-                      {t('results.verifiedBadge', 'Verified')}
-                    </Badge>
-                  )}
+              <div className="flex-1">
+                <div className="flex flex-col md:flex-row md:items-center space-y-1 md:space-y-0 md:space-x-3 mb-2">
+                  <h3 className="font-bold text-lg md:text-xl text-card-foreground">{bureau.name}</h3>
+                  <div className="flex items-center space-x-2">
+                    {bureau.isRecommended && (
+                      <Badge variant="secondary" className="bg-primary text-primary-foreground font-medium text-xs">
+                        {t('results.recommended')}
+                      </Badge>
+                    )}
+                    {bureau.verified && (
+                      <Badge variant="outline" className="border-accent text-accent text-xs">
+                        <Shield className="h-3 w-3 mr-1" />
+                        {t('results.verifiedBadge', 'Verified')}
+                      </Badge>
+                    )}
+                  </div>
                 </div>
-                <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+                <div className="flex flex-col md:flex-row md:items-center space-y-1 md:space-y-0 md:space-x-4 text-sm text-muted-foreground">
                   <span className="flex items-center">
                     <MapPin className="h-4 w-4 mr-1" />
                     {t('results.distance')}: {bureau.distance}
@@ -124,10 +126,10 @@ const ExchangeResultsEnhanced = () => {
             </div>
 
             {/* Enhanced Rate and Actions */}
-            <div className="flex items-center space-x-6">
-              <div className="text-right">
-                <div className="flex items-center justify-end space-x-2 mb-1">
-                  <div className="text-3xl font-bold text-card-foreground">
+            <div className="flex items-center justify-between md:justify-end space-x-4 md:space-x-6 mt-4 md:mt-0">
+              <div className="text-left md:text-right">
+                <div className="flex items-center space-x-2 mb-1">
+                  <div className="text-2xl md:text-3xl font-bold text-card-foreground">
                     {bureau.rate} {bureau.currency}
                   </div>
                   <div className={`text-sm px-2 py-1 rounded-full ${
@@ -141,9 +143,6 @@ const ExchangeResultsEnhanced = () => {
               </div>
               
               <div className="flex flex-col space-y-3">
-                <Button variant="outline" size="sm" className="min-w-[120px] transition-all duration-300">
-                  {t('results.compare')}
-                </Button>
                 <Button size="sm" className="min-w-[120px] bg-gradient-primary text-primary-foreground shadow-medium hover:shadow-strong hover:scale-105 transition-all duration-300">
                   {t('results.reserve', 'Reserve Now')}
                 </Button>
