@@ -22,13 +22,13 @@ const ExchangeForm = () => {
   ];
 
   return (
-    <Card className="p-6 shadow-medium bg-card/90 backdrop-blur-sm border-border/50">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <Card className="p-8 shadow-strong bg-card border border-border backdrop-blur-sm">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {/* From Currency */}
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">{t('exchange.fromLabel')}</label>
+        <div className="space-y-3">
+          <label className="text-sm font-semibold text-foreground uppercase tracking-wide">{t('exchange.fromLabel')}</label>
           <Select value={fromCurrency} onValueChange={setFromCurrency}>
-            <SelectTrigger className="h-12">
+            <SelectTrigger className="h-14 border-2 border-border hover:border-ring transition-colors bg-background">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -42,10 +42,10 @@ const ExchangeForm = () => {
         </div>
 
         {/* To Currency */}
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">{t('exchange.toLabel')}</label>
+        <div className="space-y-3">
+          <label className="text-sm font-semibold text-foreground uppercase tracking-wide">{t('exchange.toLabel')}</label>
           <Select value={toCurrency} onValueChange={setToCurrency}>
-            <SelectTrigger className="h-12">
+            <SelectTrigger className="h-14 border-2 border-border hover:border-ring transition-colors bg-background">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -59,22 +59,22 @@ const ExchangeForm = () => {
         </div>
 
         {/* Amount */}
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">{t('exchange.amountLabel')}</label>
+        <div className="space-y-3">
+          <label className="text-sm font-semibold text-foreground uppercase tracking-wide">{t('exchange.amountLabel')}</label>
           <Input
             type="number"
-            placeholder="1000"
+            placeholder="1,000"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            className="h-12"
+            className="h-14 border-2 border-border hover:border-ring focus:border-ring transition-colors bg-background text-lg font-medium"
           />
         </div>
 
         {/* City */}
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">{t('exchange.cityLabel')}</label>
+        <div className="space-y-3">
+          <label className="text-sm font-semibold text-foreground uppercase tracking-wide">{t('exchange.cityLabel')}</label>
           <Select value={city} onValueChange={setCity}>
-            <SelectTrigger className="h-12">
+            <SelectTrigger className="h-14 border-2 border-border hover:border-ring transition-colors bg-background">
               <SelectValue placeholder={t('exchange.selectCity')} />
             </SelectTrigger>
             <SelectContent>
@@ -88,7 +88,7 @@ const ExchangeForm = () => {
         </div>
       </div>
 
-      <Button className="w-full mt-6 h-12 bg-gradient-primary hover:opacity-90 transition-opacity" size="lg">
+      <Button className="w-full mt-8 h-14 bg-gradient-primary hover:opacity-90 transition-all duration-300 text-lg font-semibold shadow-medium hover:shadow-strong" size="lg">
         {t('exchange.searchButton')}
       </Button>
     </Card>
