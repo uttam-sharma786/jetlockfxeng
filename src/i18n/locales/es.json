@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "howItWorks": "Cómo Funciona",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Asegura tu moneda,",
+    "titleSpan": "donde quiera que vayas.",
+    "subtitle": "Encuentra las mejores tasas de cambio, asegura tu moneda y viaja con confianza. Compara tasas de casas de cambio confiables en tiempo real."
+  },
+  "exchange": {
+    "title": "Las mejores tasas de cambio cerca de ti",
+    "fromLabel": "De",
+    "toLabel": "A",
+    "amountLabel": "Cantidad",
+    "locationLabel": "Ubicación",
+    "searchButton": "Buscar Tasas",
+    "selectCurrency": "Seleccionar moneda",
+    "enterLocation": "Ingresa tu ubicación"
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "subtitle": "Pasos simples para asegurar las mejores tasas de cambio",
+    "step1Title": "Comparar Tasas",
+    "step1Description": "Ve tasas en tiempo real de múltiples casas de cambio en tu área",
+    "step2Title": "Elegir y Reservar",
+    "step2Description": "Selecciona la mejor tasa y reserva tu moneda en línea",
+    "step3Title": "Recoger",
+    "step3Description": "Recoge tu moneda en la ubicación elegida"
+  },
+  "userTypes": {
+    "title": "Perfecto para cada viajero",
+    "businessTitle": "Viajeros de Negocios",
+    "businessDescription": "Asegura tasas competitivas para tus viajes corporativos y tratos comerciales internacionales.",
+    "touristTitle": "Turistas",
+    "touristDescription": "Obtén el mejor valor para tu dinero de vacaciones con tasas de cambio transparentes y competitivas.",
+    "studentTitle": "Estudiantes",
+    "studentDescription": "Opciones de cambio económicas para programas de estudio en el extranjero y educación internacional."
+  },
+  "realEstate": {
+    "title": "¿Sueñas con bienes raíces, nacionales o en el extranjero?",
+    "description": "Ya sea comprando, invirtiendo o vendiendo, podemos ayudarte.",
+    "button": "Sí, estoy interesado"
+  },
+  "footer": {
+    "followUs": "Síguenos",
+    "copyright": "© 2024 JetLock FX. Todos los derechos reservados. | Cambio de moneda seguro donde quiera que viajes."
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español"
+  }
+}

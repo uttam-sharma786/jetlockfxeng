@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Lock in secure currency,",
+    "titleSpan": "wherever you jet.",
+    "subtitle": "Find the best exchange rates, secure your currency, and travel with confidence. Compare rates from trusted bureaus in real-time."
+  },
+  "exchange": {
+    "title": "Best exchange rates near you",
+    "fromLabel": "From",
+    "toLabel": "To",
+    "amountLabel": "Amount",
+    "locationLabel": "Location",
+    "searchButton": "Search Rates",
+    "selectCurrency": "Select currency",
+    "enterLocation": "Enter your location"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Simple steps to secure the best exchange rates",
+    "step1Title": "Compare Rates",
+    "step1Description": "View real-time rates from multiple bureaus in your area",
+    "step2Title": "Choose & Reserve",
+    "step2Description": "Select the best rate and reserve your currency online",
+    "step3Title": "Collect",
+    "step3Description": "Pick up your currency at the chosen location"
+  },
+  "userTypes": {
+    "title": "Perfect for every traveler",
+    "businessTitle": "Business Travelers",
+    "businessDescription": "Secure competitive rates for your corporate trips and international business dealings.",
+    "touristTitle": "Tourists",
+    "touristDescription": "Get the best value for your vacation money with transparent, competitive exchange rates.",
+    "studentTitle": "Students",
+    "studentDescription": "Budget-friendly exchange options for study abroad programs and international education."
+  },
+  "realEstate": {
+    "title": "Dreaming of real estate, domestic or abroad?",
+    "description": "Whether buying, investing, or selling, we can help.",
+    "button": "Yes, I'm interested"
+  },
+  "footer": {
+    "followUs": "Follow us",
+    "copyright": "© 2024 JetLock FX. All rights reserved. | Secure currency exchange wherever you travel."
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español"
+  }
+}

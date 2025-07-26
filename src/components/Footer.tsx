@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-foreground text-background py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +16,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="flex items-center space-x-6">
-            <span className="text-background/80">Follow us</span>
+            <span className="text-background/80">{t('footer.followUs')}</span>
             
             <a 
               href="#" 
@@ -49,7 +52,7 @@ const Footer = () => {
 
         <div className="border-t border-background/20 mt-6 pt-6 text-center">
           <p className="text-background/60 text-sm">
-            © 2024 JetLock FX. All rights reserved. | Secure currency exchange wherever you travel.
+            {t('footer.copyright')}
           </p>
         </div>
       </div>
