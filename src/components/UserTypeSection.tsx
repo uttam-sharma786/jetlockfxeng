@@ -27,7 +27,7 @@ const UserTypeSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="w-full lg:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-                onClick={() => window.open('https://forms.gle/XGdNn6GVtUh3nFa36', '_blank')}
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhYfex3fl69du129SJ5gszxKNL8EAdIpzDO2DowOyc_F5vrA/viewform', '_blank')}
               >
                 {t('userTypes.touristButton')}
               </Button>
