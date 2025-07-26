@@ -14,7 +14,11 @@ const RealEstateSection = () => {
           <p className="text-lg text-muted-foreground mb-8">
             {t('realEstate.description')}
           </p>
-          <Button size="lg" className="px-8 py-3 text-base">
+          <Button 
+            size="lg" 
+            className="px-8 py-3 text-base"
+            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScty7KeTXG6tFmbaDTITYoUaZEMpVBiOS9KM45yFF57S6bXIw/viewform', '_blank')}
+          >
             {t('realEstate.button')}
           </Button>
         </div>
