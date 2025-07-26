@@ -8,10 +8,17 @@
   "hero": {
     "title": "Asegura tu moneda,",
     "titleSpan": "donde quiera que vayas.",
-    "subtitle": "Encuentra las mejores tasas de cambio, asegura tu moneda y viaja con confianza. Compara tasas de casas de cambio confiables en tiempo real."
+    "subtitle": "Encuentra las mejores tasas de cambio, asegura tu moneda y viaja con confianza. Compara tasas de casas de cambio confiables en tiempo real.",
+    "primaryCTA": "Comenzar a Comparar Tasas",
+    "secondaryCTA": "Ver Demo",
+    "socialProof": "Confiado por más de 50,000 viajeros en todo el mundo",
+    "trustIndicator1": "Seguro y Licenciado",
+    "trustIndicator2": "Tasas en Tiempo Real",
+    "trustIndicator3": "4.9★ Calificación"
   },
   "exchange": {
     "title": "Las mejores tasas de cambio cerca de ti",
+    "subtitle": "Tasas en vivo actualizadas cada minuto. Compara y reserva las mejores ofertas al instante.",
     "fromLabel": "Quiero cambiar",
     "toLabel": "Por",
     "amountLabel": "Cantidad",
@@ -43,7 +50,15 @@
     "distance": "Distancia",
     "perUsd": "por USD",
     "compare": "Comparar",
-    "viewMap": "Ver Mapa"
+    "viewMap": "Ver Mapa",
+    "reserve": "Reservar Ahora",
+    "bestRate": "Mejor Tasa",
+    "nearby": "Cercanos",
+    "available": "Disponible",
+    "verified": "Verificados", 
+    "verifiedBadge": "Verificado",
+    "openUntil": "Abierto hasta",
+    "loadMore": "Cargar Más Resultados"
   },
   "betaFeedback": {
     "betaBadge": "BETA",

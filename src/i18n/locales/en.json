@@ -8,10 +8,17 @@
   "hero": {
     "title": "Lock in secure currency,",
     "titleSpan": "wherever you jet.",
-    "subtitle": "Find the best exchange rates, secure your currency, and travel with confidence. Compare rates from trusted bureaus in real-time."
+    "subtitle": "Find the best exchange rates, secure your currency, and travel with confidence. Compare rates from trusted bureaus in real-time.",
+    "primaryCTA": "Start Comparing Rates",
+    "secondaryCTA": "Watch Demo",
+    "socialProof": "Trusted by 50,000+ travelers worldwide",
+    "trustIndicator1": "Secure & Licensed",
+    "trustIndicator2": "Real-time Rates", 
+    "trustIndicator3": "4.9★ Rating"
   },
   "exchange": {
     "title": "Best exchange rates near you",
+    "subtitle": "Live rates updated every minute. Compare and reserve the best deals instantly.",
     "fromLabel": "I want to exchange",
     "toLabel": "For",
     "amountLabel": "Amount",
@@ -43,7 +50,15 @@
     "distance": "Distance",
     "perUsd": "per USD",
     "compare": "Compare",
-    "viewMap": "View Map"
+    "viewMap": "View Map",
+    "reserve": "Reserve Now",
+    "bestRate": "Best Rate",
+    "nearby": "Nearby",
+    "available": "Available", 
+    "verified": "Verified",
+    "verifiedBadge": "Verified",
+    "openUntil": "Open until",
+    "loadMore": "Load More Results"
   },
   "betaFeedback": {
     "betaBadge": "BETA",
