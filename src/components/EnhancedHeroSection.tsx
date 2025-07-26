@@ -14,16 +14,16 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Trust Indicators */}
-        <div className="flex items-center justify-center gap-6 mb-8 text-background/80 text-sm">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-6 mb-8 text-background text-sm font-medium">
+          <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm px-3 py-2 rounded-full">
             <Shield className="h-4 w-4" />
             <span>{t('hero.trustIndicator1', 'Secure & Licensed')}</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm px-3 py-2 rounded-full">
             <Zap className="h-4 w-4" />
             <span>{t('hero.trustIndicator2', 'Real-time Rates')}</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 bg-background/20 backdrop-blur-sm px-3 py-2 rounded-full">
             <Star className="h-4 w-4" />
             <span>{t('hero.trustIndicator3', '4.9★ Rating')}</span>
           </div>
@@ -49,16 +49,16 @@ const HeroSection = () => {
               <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
-              variant="outline" 
+              variant="hero" 
               size="lg"
-              className="px-8 py-4 text-lg border-background/30 text-background hover:bg-background/10 hover:border-background/50 transition-colors"
+              className="px-8 py-4 text-lg font-semibold transition-all duration-300"
             >
               {t('hero.secondaryCTA', 'Watch Demo')}
             </Button>
           </div>
 
           {/* Social Proof */}
-          <div className="text-background/70 text-sm">
+          <div className="text-background/90 text-sm font-medium bg-background/15 backdrop-blur-sm px-4 py-2 rounded-full inline-block">
             <p>{t('hero.socialProof', 'Trusted by 50,000+ travelers worldwide')}</p>
           </div>
         </div>

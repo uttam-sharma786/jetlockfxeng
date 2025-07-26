@@ -12,53 +12,53 @@ All colors MUST be HSL.
     --background: 0 0% 100%;
     --foreground: 224 71% 4%;
 
-    /* Card system with subtle depth */
+    /* Card system with enhanced contrast */
     --card: 0 0% 100%;
     --card-foreground: 224 71% 4%;
 
-    /* Popover with proper contrast */
+    /* Popover with strong contrast */
     --popover: 0 0% 100%;
     --popover-foreground: 224 71% 4%;
 
-    /* Primary brand - optimized light blue */
-    --primary: 200 85% 45%;
+    /* Primary brand - enhanced contrast */
+    --primary: 200 85% 40%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 200 85% 55%;
+    --primary-glow: 200 85% 50%;
 
-    /* Secondary - subtle blue-gray for hierarchy */
-    --secondary: 210 40% 94%;
-    --secondary-foreground: 200 50% 25%;
+    /* Secondary - optimized gray scale */
+    --secondary: 210 40% 92%;
+    --secondary-foreground: 200 50% 20%;
 
-    /* Muted - optimized for form labels and secondary text */
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 25% 27%;
+    /* Muted - enhanced for form labels */
+    --muted: 210 40% 94%;
+    --muted-foreground: 215 25% 20%;
 
-    /* Accent - complementary teal for highlights */
-    --accent: 175 60% 45%;
+    /* Accent - balanced teal */
+    --accent: 175 60% 40%;
     --accent-foreground: 0 0% 100%;
 
-    /* Success - clear green for positive actions */
-    --success: 142 76% 36%;
+    /* Success - clear and accessible */
+    --success: 142 76% 30%;
     --success-foreground: 0 0% 100%;
 
-    /* Destructive - clear red for errors */
-    --destructive: 0 84% 60%;
+    /* Destructive - accessible red */
+    --destructive: 0 84% 50%;
     --destructive-foreground: 0 0% 100%;
 
     /* Form elements - enhanced contrast */
-    --border: 214 32% 82%;
+    --border: 214 32% 75%;
     --input: 0 0% 100%;
-    --ring: 200 85% 45%;
+    --ring: 200 85% 40%;
 
-    /* Enhanced gradients for visual hierarchy */
-    --gradient-primary: linear-gradient(135deg, hsl(200 85% 45%), hsl(200 85% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(200 85% 45%) 0%, hsl(175 60% 45%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 96%));
+    /* Enhanced gradients with better contrast */
+    --gradient-primary: linear-gradient(135deg, hsl(200 85% 40%), hsl(200 85% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 85% 40%) 0%, hsl(175 60% 40%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 40% 94%));
 
-    /* Precision shadows for depth perception */
-    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px 0 hsl(0 0% 0% / 0.06);
-    --shadow-medium: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
-    --shadow-strong: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -2px hsl(0 0% 0% / 0.05);
+    /* Enhanced shadows for better depth */
+    --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.12), 0 1px 2px 0 hsl(0 0% 0% / 0.08);
+    --shadow-medium: 0 4px 6px -1px hsl(0 0% 0% / 0.15), 0 2px 4px -1px hsl(0 0% 0% / 0.08);
+    --shadow-strong: 0 10px 15px -3px hsl(0 0% 0% / 0.15), 0 4px 6px -2px hsl(0 0% 0% / 0.08);
 
     /* Smooth transitions for better UX */
     --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,25 +66,19 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* Sidebar colors */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    /* Dark mode - optimized for low light visibility */
+    /* Dark mode - enhanced contrast for visibility */
     --background: 224 71% 4%;
     --foreground: 210 40% 98%;
 
@@ -94,25 +88,27 @@ All colors MUST be HSL.
     --popover: 224 71% 4%;
     --popover-foreground: 210 40% 98%;
 
-    /* Dark mode primary - maintains brand consistency */
-    --primary: 200 85% 55%;
+    /* Dark mode primary - enhanced visibility */
+    --primary: 200 85% 60%;
     --primary-foreground: 224 71% 4%;
 
-    --secondary: 215 28% 17%;
+    --secondary: 215 28% 15%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 215 28% 17%;
-    --muted-foreground: 217 33% 64%;
+    --muted: 215 28% 15%;
+    --muted-foreground: 217 33% 70%;
 
-    --accent: 175 60% 50%;
+    --accent: 175 60% 55%;
     --accent-foreground: 224 71% 4%;
 
-    --destructive: 0 63% 31%;
+    --destructive: 0 63% 40%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 215 28% 17%;
-    --input: 215 28% 17%;
-    --ring: 200 85% 55%;
+    --border: 215 28% 20%;
+    --input: 215 28% 15%;
+    --ring: 200 85% 60%;
+    
+    /* Dark sidebar */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
