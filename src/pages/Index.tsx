@@ -3,6 +3,7 @@ import ExchangeForm from "@/components/ExchangeForm";
 import ExchangeResults from "@/components/ExchangeResults";
 import HowItWorks from "@/components/HowItWorks";
 import UserTypeSection from "@/components/UserTypeSection";
+import RealEstateSection from "@/components/RealEstateSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -51,6 +52,9 @@ const Index = () => {
 
       {/* User Types */}
       <UserTypeSection />
+
+      {/* Real Estate Interest */}
+      <RealEstateSection />
 
       {/* Footer */}
       <Footer />
