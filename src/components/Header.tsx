@@ -10,12 +10,15 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/a30c05d8-7b2d-40bf-9b65-35ae35629eae.png" 
-              alt="JetLock FX Logo" 
-              className="h-12 w-auto"
-            />
+          <div className="flex items-center">
+            <div className="relative group">
+              <img 
+                src="/lovable-uploads/a30c05d8-7b2d-40bf-9b65-35ae35629eae.png" 
+                alt="JetLock FX Logo" 
+                className="h-14 w-auto filter brightness-0 invert transition-all duration-300 group-hover:scale-105 drop-shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-glow/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-xl"></div>
+            </div>
           </div>
 
           {/* Navigation */}
