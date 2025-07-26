@@ -42,13 +42,6 @@ const HeroSection = () => {
           {/* Enhanced CTA Section */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <Button 
-              size="lg" 
-              className="bg-gradient-primary text-primary-foreground px-8 py-4 text-lg font-semibold group shadow-medium hover:shadow-strong hover:scale-105 transition-all duration-300"
-            >
-              {t('hero.primaryCTA', 'Start Comparing Rates')}
-              <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
               variant="hero" 
               size="lg"
               className="px-8 py-4 text-lg font-semibold transition-all duration-300"
