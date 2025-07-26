@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const ExchangeResults = () => {
+  const { t } = useTranslation();
   const exchangeBureaus = [
     {
       id: 1,
@@ -59,11 +61,11 @@ const ExchangeResults = () => {
                   <h3 className="font-semibold text-lg text-card-foreground">{bureau.name}</h3>
                   {bureau.isRecommended && (
                     <Badge variant="secondary" className="bg-accent text-accent-foreground">
-                      Recommended
+                      {t('results.recommended')}
                     </Badge>
                   )}
                 </div>
-                <p className="text-muted-foreground">Distance: {bureau.distance}</p>
+                <p className="text-muted-foreground">{t('results.distance')}: {bureau.distance}</p>
               </div>
             </div>
 
@@ -73,15 +75,15 @@ const ExchangeResults = () => {
                 <div className="text-2xl font-bold text-card-foreground">
                   {bureau.rate} {bureau.currency}
                 </div>
-                <div className="text-sm text-muted-foreground">per USD</div>
+                <div className="text-sm text-muted-foreground">{t('results.perUsd')}</div>
               </div>
               
               <div className="flex flex-col space-y-2">
                 <Button variant="outline" size="sm" className="min-w-[100px]">
-                  Compare
+                  {t('results.compare')}
                 </Button>
                 <Button size="sm" className="min-w-[100px] bg-gradient-primary hover:opacity-90">
-                  View Map
+                  {t('results.viewMap')}
                 </Button>
               </div>
             </div>

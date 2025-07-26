@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const UserTypeSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,11 +16,11 @@ const UserTypeSection = () => {
               </div>
               
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                For Tourists
+                {t('userTypes.touristTitle')}
               </h3>
               
               <p className="text-lg text-muted-foreground mb-8">
-                Find the best local rate online and travel with confidence knowing you're getting the most value for your money.
+                {t('userTypes.touristDescription')}
               </p>
               
               <Button 
@@ -26,7 +28,7 @@ const UserTypeSection = () => {
                 size="lg" 
                 className="w-full lg:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
               >
-                Register as Traveler
+                {t('userTypes.touristButton')}
               </Button>
             </div>
           </Card>
@@ -39,18 +41,18 @@ const UserTypeSection = () => {
               </div>
               
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                For Exchange Bureaus
+                {t('userTypes.bureauTitle')}
               </h3>
               
               <p className="text-lg text-muted-foreground mb-8">
-                Boost visibility, manage rates online, and connect with travelers looking for the best currency exchange deals.
+                {t('userTypes.bureauDescription')}
               </p>
               
               <Button 
                 size="lg" 
                 className="w-full lg:w-auto bg-gradient-to-r from-accent to-success hover:opacity-90 transition-opacity"
               >
-                Join Free
+                {t('userTypes.bureauButton')}
               </Button>
             </div>
           </Card>

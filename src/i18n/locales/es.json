@@ -12,32 +12,38 @@
   },
   "exchange": {
     "title": "Las mejores tasas de cambio cerca de ti",
-    "fromLabel": "De",
-    "toLabel": "A",
+    "fromLabel": "Quiero cambiar",
+    "toLabel": "Por",
     "amountLabel": "Cantidad",
-    "locationLabel": "Ubicación",
-    "searchButton": "Buscar Tasas",
+    "cityLabel": "Ciudad",
+    "searchButton": "Buscar Mejores Tasas",
     "selectCurrency": "Seleccionar moneda",
-    "enterLocation": "Ingresa tu ubicación"
+    "selectCity": "Seleccionar ciudad"
   },
   "howItWorks": {
-    "title": "Cómo Funciona",
-    "subtitle": "Pasos simples para asegurar las mejores tasas de cambio",
-    "step1Title": "Comparar Tasas",
-    "step1Description": "Ve tasas en tiempo real de múltiples casas de cambio en tu área",
-    "step2Title": "Elegir y Reservar",
-    "step2Description": "Selecciona la mejor tasa y reserva tu moneda en línea",
-    "step3Title": "Recoger",
-    "step3Description": "Recoge tu moneda en la ubicación elegida"
+    "title": "Cómo funciona",
+    "subtitle": "Obtener la mejor tasa de cambio es simple con nuestro proceso de tres pasos",
+    "step1Title": "Buscar tasas cercanas",
+    "step1Description": "Encuentra las mejores tasas de cambio en tu área con precios en tiempo real",
+    "step2Title": "Bloquear la mejor tasa",
+    "step2Description": "Asegura tu tasa preferida y reserva tu cambio de moneda",
+    "step3Title": "Recoger tu efectivo",
+    "step3Description": "Visita la ubicación y recoge tu moneda cambiada de forma segura"
   },
   "userTypes": {
-    "title": "Perfecto para cada viajero",
-    "businessTitle": "Viajeros de Negocios",
-    "businessDescription": "Asegura tasas competitivas para tus viajes corporativos y tratos comerciales internacionales.",
-    "touristTitle": "Turistas",
-    "touristDescription": "Obtén el mejor valor para tu dinero de vacaciones con tasas de cambio transparentes y competitivas.",
-    "studentTitle": "Estudiantes",
-    "studentDescription": "Opciones de cambio económicas para programas de estudio en el extranjero y educación internacional."
+    "touristTitle": "Para Turistas",
+    "touristDescription": "Encuentra la mejor tasa local en línea y viaja con confianza sabiendo que obtienes el máximo valor por tu dinero.",
+    "touristButton": "Registrarse como Viajero",
+    "bureauTitle": "Para Casas de Cambio",
+    "bureauDescription": "Aumenta la visibilidad, administra tasas en línea y conecta con viajeros que buscan las mejores ofertas de cambio de moneda.",
+    "bureauButton": "Únete Gratis"
+  },
+  "results": {
+    "recommended": "Recomendado",
+    "distance": "Distancia",
+    "perUsd": "por USD",
+    "compare": "Comparar",
+    "viewMap": "Ver Mapa"
   },
   "realEstate": {
     "title": "¿Sueñas con bienes raíces, nacionales o en el extranjero?",

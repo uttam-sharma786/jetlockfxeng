@@ -1,19 +1,22 @@
+import { useTranslation } from "react-i18next";
+
 const HowItWorks = () => {
+  const { t } = useTranslation();
   const steps = [
     {
       icon: "🔍",
-      title: "Search rates nearby",
-      description: "Find the best exchange rates in your area with real-time pricing",
+      title: t('howItWorks.step1Title'),
+      description: t('howItWorks.step1Description'),
     },
     {
       icon: "🔒",
-      title: "Lock the best rate",
-      description: "Secure your preferred rate and reserve your currency exchange",
+      title: t('howItWorks.step2Title'),
+      description: t('howItWorks.step2Description'),
     },
     {
       icon: "💰",
-      title: "Pick up your cash",
-      description: "Visit the location and collect your exchanged currency safely",
+      title: t('howItWorks.step3Title'),
+      description: t('howItWorks.step3Description'),
     },
   ];
 
@@ -22,10 +25,10 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            How it works
+            {t('howItWorks.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Getting the best exchange rate is simple with our three-step process
+            {t('howItWorks.subtitle')}
           </p>
         </div>
 

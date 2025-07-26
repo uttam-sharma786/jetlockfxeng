@@ -12,32 +12,38 @@
   },
   "exchange": {
     "title": "Best exchange rates near you",
-    "fromLabel": "From",
-    "toLabel": "To",
+    "fromLabel": "I want to exchange",
+    "toLabel": "For",
     "amountLabel": "Amount",
-    "locationLabel": "Location",
-    "searchButton": "Search Rates",
+    "cityLabel": "City",
+    "searchButton": "Find Best Rates",
     "selectCurrency": "Select currency",
-    "enterLocation": "Enter your location"
+    "selectCity": "Select city"
   },
   "howItWorks": {
-    "title": "How It Works",
-    "subtitle": "Simple steps to secure the best exchange rates",
-    "step1Title": "Compare Rates",
-    "step1Description": "View real-time rates from multiple bureaus in your area",
-    "step2Title": "Choose & Reserve",
-    "step2Description": "Select the best rate and reserve your currency online",
-    "step3Title": "Collect",
-    "step3Description": "Pick up your currency at the chosen location"
+    "title": "How it works",
+    "subtitle": "Getting the best exchange rate is simple with our three-step process",
+    "step1Title": "Search rates nearby",
+    "step1Description": "Find the best exchange rates in your area with real-time pricing",
+    "step2Title": "Lock the best rate",
+    "step2Description": "Secure your preferred rate and reserve your currency exchange",
+    "step3Title": "Pick up your cash",
+    "step3Description": "Visit the location and collect your exchanged currency safely"
   },
   "userTypes": {
-    "title": "Perfect for every traveler",
-    "businessTitle": "Business Travelers",
-    "businessDescription": "Secure competitive rates for your corporate trips and international business dealings.",
-    "touristTitle": "Tourists",
-    "touristDescription": "Get the best value for your vacation money with transparent, competitive exchange rates.",
-    "studentTitle": "Students",
-    "studentDescription": "Budget-friendly exchange options for study abroad programs and international education."
+    "touristTitle": "For Tourists",
+    "touristDescription": "Find the best local rate online and travel with confidence knowing you're getting the most value for your money.",
+    "touristButton": "Register as Traveler",
+    "bureauTitle": "For Exchange Bureaus",
+    "bureauDescription": "Boost visibility, manage rates online, and connect with travelers looking for the best currency exchange deals.",
+    "bureauButton": "Join Free"
+  },
+  "results": {
+    "recommended": "Recommended",
+    "distance": "Distance",
+    "perUsd": "per USD",
+    "compare": "Compare",
+    "viewMap": "View Map"
   },
   "realEstate": {
     "title": "Dreaming of real estate, domestic or abroad?",

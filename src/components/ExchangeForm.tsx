@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 
 const ExchangeForm = () => {
+  const { t } = useTranslation();
   const [fromCurrency, setFromCurrency] = useState("USD");
   const [toCurrency, setToCurrency] = useState("MXN");
   const [amount, setAmount] = useState("");
@@ -24,7 +26,7 @@ const ExchangeForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {/* From Currency */}
         <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">I want to exchange</label>
+          <label className="text-sm font-medium text-muted-foreground">{t('exchange.fromLabel')}</label>
           <Select value={fromCurrency} onValueChange={setFromCurrency}>
             <SelectTrigger className="h-12">
               <SelectValue />
@@ -41,7 +43,7 @@ const ExchangeForm = () => {
 
         {/* To Currency */}
         <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">For</label>
+          <label className="text-sm font-medium text-muted-foreground">{t('exchange.toLabel')}</label>
           <Select value={toCurrency} onValueChange={setToCurrency}>
             <SelectTrigger className="h-12">
               <SelectValue />
@@ -58,7 +60,7 @@ const ExchangeForm = () => {
 
         {/* Amount */}
         <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Amount</label>
+          <label className="text-sm font-medium text-muted-foreground">{t('exchange.amountLabel')}</label>
           <Input
             type="number"
             placeholder="1000"
@@ -70,10 +72,10 @@ const ExchangeForm = () => {
 
         {/* City */}
         <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">City</label>
+          <label className="text-sm font-medium text-muted-foreground">{t('exchange.cityLabel')}</label>
           <Select value={city} onValueChange={setCity}>
             <SelectTrigger className="h-12">
-              <SelectValue placeholder="Select city" />
+              <SelectValue placeholder={t('exchange.selectCity')} />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="mexico-city">Mexico City</SelectItem>
@@ -87,7 +89,7 @@ const ExchangeForm = () => {
       </div>
 
       <Button className="w-full mt-6 h-12 bg-gradient-primary hover:opacity-90 transition-opacity" size="lg">
-        Find Best Rates
+        {t('exchange.searchButton')}
       </Button>
     </Card>
   );
