@@ -14,6 +14,16 @@ const Footer = () => {
             <span className="text-lg font-bold">JetLock FX</span>
           </div>
 
+          {/* Contact Email */}
+          <div className="mb-4 md:mb-0">
+            <a 
+              href="mailto:info@jetlock.com" 
+              className="text-background/80 hover:text-background transition-colors"
+            >
+              info@jetlock.com
+            </a>
+          </div>
+
           {/* Social Links */}
           <div className="flex items-center space-x-6">
             <span className="text-background/80">{t('footer.followUs')}</span>
