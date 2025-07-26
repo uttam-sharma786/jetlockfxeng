@@ -45,6 +45,19 @@
     "compare": "Comparar",
     "viewMap": "Ver Mapa"
   },
+  "betaFeedback": {
+    "betaBadge": "BETA",
+    "title": "¡Ayúdanos a Mejorar - Comparte Tu Opinión!",
+    "subtitle": "Estamos en pruebas beta y tu opinión es invaluable. Participa en nuestra encuesta según tu tipo de usuario para ayudarnos a construir la mejor plataforma de cambio de moneda.",
+    "travelersTitle": "Viajeros",
+    "travelersDescription": "Comparte tus experiencias de viaje y cambio de moneda",
+    "businessTitle": "Empresas No Financieras",
+    "businessDescription": "Cuéntanos sobre las necesidades de moneda de tu empresa",
+    "bureauTitle": "Casa de Cambio",
+    "bureauDescription": "Ayúdanos a entender las operaciones de casas de cambio",
+    "takeSurvey": "Participar en Encuesta",
+    "thankYou": "¡Gracias por ayudarnos a mejorar JetLock FX!"
+  },
   "realEstate": {
     "title": "¿Sueñas con bienes raíces, nacionales o en el extranjero?",
     "description": "Ya sea comprando, invirtiendo o vendiendo, podemos ayudarte.",

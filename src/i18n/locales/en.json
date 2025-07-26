@@ -45,6 +45,19 @@
     "compare": "Compare",
     "viewMap": "View Map"
   },
+  "betaFeedback": {
+    "betaBadge": "BETA",
+    "title": "Help Us Improve - Share Your Feedback!",
+    "subtitle": "We're in beta testing and your input is invaluable. Take our survey based on your user type to help us build the best currency exchange platform.",
+    "travelersTitle": "Travelers",
+    "travelersDescription": "Share your travel and currency exchange experiences",
+    "businessTitle": "Non Financial Businesses", 
+    "businessDescription": "Tell us about your business currency needs",
+    "bureauTitle": "Bureau of Exchange",
+    "bureauDescription": "Help us understand exchange bureau operations",
+    "takeSurvey": "Take Survey",
+    "thankYou": "Thank you for helping us improve JetLock FX!"
+  },
   "realEstate": {
     "title": "Dreaming of real estate, domestic or abroad?",
     "description": "Whether buying, investing, or selling, we can help.",
