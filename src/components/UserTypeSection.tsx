@@ -52,6 +52,7 @@ const UserTypeSection = () => {
               <Button 
                 size="lg" 
                 className="w-full lg:w-auto bg-gradient-to-r from-accent to-success hover:opacity-90 transition-opacity"
+                onClick={() => window.open('https://forms.gle/vZF8Qn691wn5KoQEA', '_blank')}
               >
                 {t('userTypes.bureauButton')}
               </Button>
