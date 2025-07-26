@@ -27,6 +27,7 @@ const UserTypeSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="w-full lg:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                onClick={() => window.open('https://forms.gle/XGdNn6GVtUh3nFa36', '_blank')}
               >
                 {t('userTypes.touristButton')}
               </Button>
