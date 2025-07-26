@@ -11,13 +11,15 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="relative group">
-              <img 
-                src="/lovable-uploads/a30c05d8-7b2d-40bf-9b65-35ae35629eae.png" 
-                alt="JetLock FX Logo" 
-                className="h-14 w-auto filter brightness-0 invert transition-all duration-300 group-hover:scale-105 drop-shadow-lg"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-glow/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg blur-xl"></div>
+            <div className="relative group cursor-pointer">
+              <div className="absolute -inset-2 bg-gradient-to-r from-primary-glow/20 via-accent/20 to-primary-glow/20 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-500 blur-sm"></div>
+              <div className="relative bg-card/10 backdrop-blur-sm rounded-lg p-2 border border-primary-glow/20 group-hover:border-primary-glow/40 transition-all duration-300">
+                <img 
+                  src="/lovable-uploads/a30c05d8-7b2d-40bf-9b65-35ae35629eae.png" 
+                  alt="JetLock FX Logo" 
+                  className="h-12 w-auto transition-all duration-300 group-hover:scale-105"
+                />
+              </div>
             </div>
           </div>
 
