@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { TrendingUp, MapPin, Clock, Shield } from 'lucide-react';
+import { TrendingUp, MapPin, Clock, Shield, Star } from 'lucide-react';
 
 const ExchangeResultsEnhanced = () => {
   const { t } = useTranslation();
@@ -21,7 +21,9 @@ const ExchangeResultsEnhanced = () => {
       trend: "+0.05",
       openUntil: "22:00",
       verified: true,
-      savings: "Save $12.50"
+      savings: "Save $12.50",
+      rating: 4.8,
+      reviewCount: 127
     },
     {
       id: 2,
@@ -35,7 +37,9 @@ const ExchangeResultsEnhanced = () => {
       trend: "+0.02",
       openUntil: "20:00",
       verified: true,
-      savings: "Save $9.80"
+      savings: "Save $9.80",
+      rating: 4.6,
+      reviewCount: 89
     },
     {
       id: 3,
@@ -49,7 +53,9 @@ const ExchangeResultsEnhanced = () => {
       trend: "-0.01",
       openUntil: "18:00",
       verified: false,
-      savings: "Save $5.20"
+      savings: "Save $5.20",
+      rating: 4.2,
+      reviewCount: 45
     },
   ];
 
@@ -121,6 +127,25 @@ const ExchangeResultsEnhanced = () => {
                     <Clock className="h-4 w-4 mr-1" />
                     {t('results.openUntil', 'Open until')}: {bureau.openUntil}
                   </span>
+                </div>
+                {/* Rating */}
+                <div className="flex items-center space-x-2 mt-2">
+                  <div className="flex items-center space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i}
+                        className={`h-4 w-4 ${
+                          i < Math.floor(bureau.rating) 
+                            ? 'text-yellow-400 fill-yellow-400' 
+                            : i < bureau.rating 
+                            ? 'text-yellow-400 fill-yellow-400/50'
+                            : 'text-muted-foreground/30'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-sm font-medium text-foreground">{bureau.rating}</span>
+                  <span className="text-sm text-muted-foreground">({bureau.reviewCount} reviews)</span>
                 </div>
               </div>
             </div>
