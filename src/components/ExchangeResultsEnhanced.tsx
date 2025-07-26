@@ -82,8 +82,8 @@ const ExchangeResultsEnhanced = () => {
       {exchangeBureaus.map((bureau, index) => (
         <Card 
           key={bureau.id} 
-          className={`p-6 transition-all duration-300 hover:shadow-strong hover:scale-[1.01] gpu-accelerated ${
-            bureau.isRecommended ? 'ring-2 ring-primary/20 bg-gradient-to-r from-primary/5 to-accent/5' : 'card-elevated'
+          className={`p-6 transition-all duration-300 hover:shadow-strong hover:scale-[1.01] transform will-change-transform ${
+            bureau.isRecommended ? 'ring-2 ring-primary/20 bg-gradient-to-r from-primary/5 to-accent/5' : 'bg-card shadow-medium border border-border/50 backdrop-blur-sm'
           }`}
           style={{ animationDelay: `${index * 100}ms` }}
         >
@@ -141,10 +141,10 @@ const ExchangeResultsEnhanced = () => {
               </div>
               
               <div className="flex flex-col space-y-3">
-                <Button variant="outline" size="sm" className="min-w-[120px] transition-smooth">
+                <Button variant="outline" size="sm" className="min-w-[120px] transition-all duration-300">
                   {t('results.compare')}
                 </Button>
-                <Button size="sm" className="min-w-[120px] btn-primary">
+                <Button size="sm" className="min-w-[120px] bg-gradient-primary text-primary-foreground shadow-medium hover:shadow-strong hover:scale-105 transition-all duration-300">
                   {t('results.reserve', 'Reserve Now')}
                 </Button>
               </div>

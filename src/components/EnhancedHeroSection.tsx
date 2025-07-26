@@ -43,7 +43,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <Button 
               size="lg" 
-              className="btn-primary px-8 py-4 text-lg font-semibold group"
+              className="bg-gradient-primary text-primary-foreground px-8 py-4 text-lg font-semibold group shadow-medium hover:shadow-strong hover:scale-105 transition-all duration-300"
             >
               {t('hero.primaryCTA', 'Start Comparing Rates')}
               <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -66,22 +66,22 @@ const HeroSection = () => {
         {/* Enhanced Exchange Form with better spacing */}
         <div className="max-w-5xl mx-auto animate-slide-up">
           <Suspense fallback={
-            <div className="card-elevated p-8 animate-pulse">
+            <div className="bg-card shadow-medium border border-border/50 backdrop-blur-sm p-8 animate-pulse rounded-lg">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                 {[...Array(4)].map((_, i) => (
-                  <div key={i} className="loading-skeleton h-12 w-full"></div>
+                  <div key={i} className="animate-pulse bg-muted rounded h-12 w-full"></div>
                 ))}
               </div>
-              <div className="loading-skeleton h-12 w-full mt-6"></div>
+              <div className="animate-pulse bg-muted rounded h-12 w-full mt-6"></div>
             </div>
           }>
-            <div className="card-elevated p-8">
+            <div className="bg-card shadow-medium border border-border/50 backdrop-blur-sm p-8 rounded-lg transition-all duration-300 hover:shadow-strong hover:scale-[1.02]">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div className="space-y-3">
                   <label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
                     {t('exchange.fromLabel')}
                   </label>
-                  <div className="form-input h-14 bg-background/80 rounded-lg flex items-center px-4">
+                  <div className="transition-all duration-200 focus:ring-2 focus:ring-primary focus:ring-offset-1 border-input bg-background/50 backdrop-blur-sm h-14 bg-background/80 rounded-lg flex items-center px-4">
                     <span className="text-lg">USD</span>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const HeroSection = () => {
                   <label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
                     {t('exchange.toLabel')}
                   </label>
-                  <div className="form-input h-14 bg-background/80 rounded-lg flex items-center px-4">
+                  <div className="transition-all duration-200 focus:ring-2 focus:ring-primary focus:ring-offset-1 border-input bg-background/50 backdrop-blur-sm h-14 bg-background/80 rounded-lg flex items-center px-4">
                     <span className="text-lg">MXN</span>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const HeroSection = () => {
                   <label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
                     {t('exchange.amountLabel')}
                   </label>
-                  <div className="form-input h-14 bg-background/80 rounded-lg flex items-center px-4">
+                  <div className="transition-all duration-200 focus:ring-2 focus:ring-primary focus:ring-offset-1 border-input bg-background/50 backdrop-blur-sm h-14 bg-background/80 rounded-lg flex items-center px-4">
                     <span className="text-lg text-muted-foreground">1,000</span>
                   </div>
                 </div>
@@ -105,12 +105,12 @@ const HeroSection = () => {
                   <label className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
                     {t('exchange.cityLabel')}
                   </label>
-                  <div className="form-input h-14 bg-background/80 rounded-lg flex items-center px-4">
+                  <div className="transition-all duration-200 focus:ring-2 focus:ring-primary focus:ring-offset-1 border-input bg-background/50 backdrop-blur-sm h-14 bg-background/80 rounded-lg flex items-center px-4">
                     <span className="text-lg text-muted-foreground">{t('exchange.selectCity')}</span>
                   </div>
                 </div>
               </div>
-              <Button className="w-full mt-8 h-14 text-lg font-semibold btn-primary">
+              <Button className="w-full mt-8 h-14 text-lg font-semibold bg-gradient-primary text-primary-foreground shadow-medium hover:shadow-strong hover:scale-105 transition-all duration-300">
                 {t('exchange.searchButton')}
               </Button>
             </div>
