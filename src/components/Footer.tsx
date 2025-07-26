@@ -17,10 +17,10 @@ const Footer = () => {
           {/* Contact Email */}
           <div className="mb-4 md:mb-0">
             <a 
-              href="mailto:info@jetlock.com" 
+              href="mailto:info@jetlockfx.com" 
               className="text-background/80 hover:text-background transition-colors"
             >
-              info@jetlock.com
+              info@jetlockfx.com
             </a>
           </div>
 
