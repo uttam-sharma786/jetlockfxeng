@@ -6,32 +6,32 @@ const Header = () => {
   const { t } = useTranslation();
   
   return (
-    <header className="w-full bg-blue-400/95 backdrop-blur-sm border-b border-blue-300 sticky top-0 z-50">
+    <header className="w-full bg-primary/95 backdrop-blur-sm border-b border-primary-glow/30 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-primary-foreground/20 rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-xl">J</span>
             </div>
-            <span className="text-xl font-bold text-white">JetLock FX</span>
+            <span className="text-xl font-bold text-primary-foreground">JetLock FX</span>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-white/90 hover:text-white transition-colors">
+            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
               {t('nav.about')}
             </a>
-            <a href="#" className="text-white/90 hover:text-white transition-colors">
+            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
               {t('nav.contact')}
             </a>
-            <a href="#" className="text-white/90 hover:text-white transition-colors">
+            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
               Terms
             </a>
-            <a href="#" className="text-white/90 hover:text-white transition-colors">
+            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
               Privacy
             </a>
-            <a href="#" className="text-white/90 hover:text-white transition-colors">
+            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
               FAQ
             </a>
             <LanguageSelector />
