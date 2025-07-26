@@ -6,7 +6,7 @@ const Header = () => {
   const { t } = useTranslation();
   
   return (
-    <header className="w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-700 sticky top-0 z-50">
+    <header className="w-full bg-blue-400/95 backdrop-blur-sm border-b border-blue-300 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -19,19 +19,19 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">
+            <a href="#" className="text-white/90 hover:text-white transition-colors">
               {t('nav.about')}
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">
+            <a href="#" className="text-white/90 hover:text-white transition-colors">
               {t('nav.contact')}
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">
+            <a href="#" className="text-white/90 hover:text-white transition-colors">
               Terms
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">
+            <a href="#" className="text-white/90 hover:text-white transition-colors">
               Privacy
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">
+            <a href="#" className="text-white/90 hover:text-white transition-colors">
               FAQ
             </a>
             <LanguageSelector />
