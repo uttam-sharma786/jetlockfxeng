@@ -26,11 +26,20 @@ const LanguageSelector = () => {
           {i18n.language === 'es' ? 'ES' : 'EN'}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="bg-background border border-border shadow-lg">
-        <DropdownMenuItem onClick={() => changeLanguage('en')} className="text-foreground hover:bg-muted">
+      <DropdownMenuContent 
+        align="end" 
+        className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg z-50"
+      >
+        <DropdownMenuItem 
+          onClick={() => changeLanguage('en')} 
+          className="text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
+        >
           🇺🇸 {t('language.english')}
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLanguage('es')} className="text-foreground hover:bg-muted">
+        <DropdownMenuItem 
+          onClick={() => changeLanguage('es')} 
+          className="text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
+        >
           🇪🇸 {t('language.spanish')}
         </DropdownMenuItem>
       </DropdownMenuContent>
