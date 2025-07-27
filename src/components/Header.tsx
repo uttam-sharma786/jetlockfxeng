@@ -32,7 +32,7 @@ const Header = () => {
                   className={`text-foreground hover:text-foreground/80 flex items-center space-x-2 ${i18n.language === 'en' ? 'bg-primary/20' : ''}`}
                   onClick={() => i18n.changeLanguage('en')}
                 >
-                  <img src="/src/assets/flags/us.png" alt="US Flag" className="w-4 h-3" />
+                  <img src="/flags/us.png" alt="US Flag" className="w-4 h-3" />
                   <span>EN</span>
                 </Button>
                 <Button 
@@ -41,7 +41,7 @@ const Header = () => {
                   className={`text-foreground hover:text-foreground/80 flex items-center space-x-2 ${i18n.language === 'es' ? 'bg-primary/20' : ''}`}
                   onClick={() => i18n.changeLanguage('es')}
                 >
-                  <img src="/src/assets/flags/es.png" alt="Spanish Flag" className="w-4 h-3" />
+                  <img src="/flags/es.png" alt="Spanish Flag" className="w-4 h-3" />
                   <span>ES</span>
                 </Button>
               </div>
