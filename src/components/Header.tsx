@@ -29,18 +29,20 @@ const Header = () => {
                 <Button 
                   variant="ghost" 
                   size="sm" 
-                  className={`text-foreground hover:text-foreground/80 ${i18n.language === 'en' ? 'bg-primary/20' : ''}`}
+                  className={`text-foreground hover:text-foreground/80 flex items-center space-x-2 ${i18n.language === 'en' ? 'bg-primary/20' : ''}`}
                   onClick={() => i18n.changeLanguage('en')}
                 >
-                  🇺🇸 EN
+                  <img src="/src/assets/flags/us.png" alt="US Flag" className="w-4 h-3" />
+                  <span>EN</span>
                 </Button>
                 <Button 
                   variant="ghost" 
                   size="sm" 
-                  className={`text-foreground hover:text-foreground/80 ${i18n.language === 'es' ? 'bg-primary/20' : ''}`}
+                  className={`text-foreground hover:text-foreground/80 flex items-center space-x-2 ${i18n.language === 'es' ? 'bg-primary/20' : ''}`}
                   onClick={() => i18n.changeLanguage('es')}
                 >
-                  🇪🇸 ES
+                  <img src="/src/assets/flags/es.png" alt="Spanish Flag" className="w-4 h-3" />
+                  <span>ES</span>
                 </Button>
               </div>
             </div>
