@@ -22,10 +22,11 @@ const Header = () => {
               </div>
             </div>
             
-            {/* Highlighted Language Selector */}
+            {/* Highlighted Language Selectors */}
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg opacity-75 blur-sm animate-pulse"></div>
-              <div className="relative bg-primary/10 backdrop-blur-sm rounded-lg p-1 border border-primary/30 shadow-lg">
+              <div className="relative bg-primary/10 backdrop-blur-sm rounded-lg p-1 border border-primary/30 shadow-lg flex space-x-1">
+                <LanguageSelector />
                 <LanguageSelector />
               </div>
             </div>
