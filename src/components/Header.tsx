@@ -41,7 +41,7 @@ const Header = () => {
                   className={`text-foreground hover:text-foreground/80 flex items-center space-x-2 ${i18n.language === 'es' ? 'bg-primary/20' : ''}`}
                   onClick={() => i18n.changeLanguage('es')}
                 >
-                  <img src="/flags/es.png" alt="Spanish Flag" className="w-4 h-3" />
+                  <img src="/flags/mx.png" alt="Mexican Flag" className="w-4 h-3" />
                   <span>ES</span>
                 </Button>
               </div>
