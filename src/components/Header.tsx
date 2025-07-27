@@ -25,19 +25,19 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
+            <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
               {t('nav.about')}
             </a>
-            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
+            <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
               {t('nav.contact')}
             </a>
-            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
+            <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
               Terms
             </a>
-            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
+            <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
               Privacy
             </a>
-            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground transition-colors">
+            <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
               FAQ
             </a>
             <LanguageSelector />
