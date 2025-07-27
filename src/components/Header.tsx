@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import LanguageSelector from "@/components/LanguageSelector";
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   return (
     <header className="w-full bg-gradient-to-r from-card/95 via-card/90 to-card/95 backdrop-blur-md border-b border-primary-glow/30 sticky top-0 z-50 shadow-lg">
@@ -26,8 +26,22 @@ const Header = () => {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg opacity-75 blur-sm animate-pulse"></div>
               <div className="relative bg-primary/10 backdrop-blur-sm rounded-lg p-1 border border-primary/30 shadow-lg flex space-x-1">
-                <LanguageSelector />
-                <LanguageSelector />
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className={`text-foreground hover:text-foreground/80 ${i18n.language === 'en' ? 'bg-primary/20' : ''}`}
+                  onClick={() => i18n.changeLanguage('en')}
+                >
+                  🇺🇸 EN
+                </Button>
+                <Button 
+                  variant="ghost" 
+                  size="sm" 
+                  className={`text-foreground hover:text-foreground/80 ${i18n.language === 'es' ? 'bg-primary/20' : ''}`}
+                  onClick={() => i18n.changeLanguage('es')}
+                >
+                  🇪🇸 ES
+                </Button>
               </div>
             </div>
           </div>
