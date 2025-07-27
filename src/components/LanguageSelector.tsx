@@ -21,7 +21,7 @@ const LanguageSelector = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="text-background hover:text-background/80">
+        <Button variant="ghost" size="sm" className="text-foreground hover:text-foreground/80">
           <Globe className="h-4 w-4 mr-2" />
           {i18n.language === 'es' ? 'ES' : 'EN'}
         </Button>
