@@ -6,7 +6,7 @@ const Header = () => {
   const { t } = useTranslation();
   
   return (
-    <header className="w-full bg-primary/95 backdrop-blur-sm border-b border-primary-glow/30 sticky top-0 z-50">
+    <header className="w-full bg-gradient-to-r from-card/95 via-card/90 to-card/95 backdrop-blur-md border-b border-primary-glow/30 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
