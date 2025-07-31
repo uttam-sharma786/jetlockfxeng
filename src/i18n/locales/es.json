@@ -78,6 +78,10 @@
     "description": "Ya sea comprando, invirtiendo o vendiendo, podemos ayudarte.",
     "button": "Sí, estoy interesado"
   },
+  "incubators": {
+    "title": "Incubadoras y Aceleradoras que nos Apoyan",
+    "description": "JetLock FX cuenta con el apoyo de incubadoras líderes en Estados Unidos y México que fomentan nuestro crecimiento como startup:"
+  },
   "footer": {
     "followUs": "Síguenos",
     "copyright": "© 2024 JetLock FX. Todos los derechos reservados. | Cambio de moneda seguro donde quiera que viajes."

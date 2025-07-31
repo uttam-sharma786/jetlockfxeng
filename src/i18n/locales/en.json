@@ -78,6 +78,10 @@
     "description": "Whether buying, investing, or selling, we can help.",
     "button": "Yes, I'm interested"
   },
+  "incubators": {
+    "title": "Incubators and Accelerators Supporting Us",
+    "description": "JetLock FX is supported by leading incubators in the U.S. and Mexico that foster our growth as a startup:"
+  },
   "footer": {
     "followUs": "Follow us",
     "copyright": "© 2024 JetLock FX. All rights reserved. | Secure currency exchange wherever you travel."

@@ -5,6 +5,7 @@ import ExchangeResultsEnhanced from "@/components/ExchangeResultsEnhanced";
 import HowItWorks from "@/components/HowItWorks";
 import UserTypeSection from "@/components/UserTypeSection";
 import BetaFeedbackSection from "@/components/BetaFeedbackSection";
+import IncubatorsSection from "@/components/IncubatorsSection";
 import RealEstateSection from "@/components/RealEstateSection";
 import Footer from "@/components/Footer";
 
@@ -44,6 +45,9 @@ const Index = () => {
 
       {/* Beta Feedback */}
       <BetaFeedbackSection />
+
+      {/* Incubators and Accelerators */}
+      <IncubatorsSection />
 
       {/* Real Estate Interest */}
       <RealEstateSection />
