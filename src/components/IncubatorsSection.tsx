@@ -13,14 +13,14 @@ const IncubatorsSection = () => {
       alt: "CSUF Startup Incubator"
     },
     {
-      name: "Elevate Southwest Incubator",
-      logo: elevateLogo,
-      alt: "Elevate Southwest Incubator"
-    },
-    {
       name: "CETYS University",
       logo: cetysLogo,
       alt: "CETYS Universidad"
+    },
+    {
+      name: "Elevate Southwest Incubator",
+      logo: elevateLogo,
+      alt: "Elevate Southwest Incubator"
     }
   ];
   
