@@ -50,10 +50,6 @@ const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Social Proof */}
-          <div className="text-background/90 text-sm font-medium bg-background/15 backdrop-blur-sm px-4 py-2 rounded-full inline-block">
-            <p>{t('hero.socialProof', 'Trusted by 50,000+ travelers worldwide')}</p>
-          </div>
         </div>
 
         {/* Enhanced Exchange Form with better spacing */}
