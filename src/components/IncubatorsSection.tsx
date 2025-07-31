@@ -9,19 +9,16 @@ const IncubatorsSection = () => {
   const incubators = [
     {
       name: "CSUF Startup Incubator",
-      location: "California State University, Fullerton",
       logo: csufLogo,
       alt: "CSUF Startup Incubator"
     },
     {
       name: "Elevate Southwest Incubator",
-      location: "Yuma, Arizona",
       logo: elevateLogo,
       alt: "Elevate Southwest Incubator"
     },
     {
       name: "CETYS University",
-      location: "Mexicali and Tijuana, Baja California",
       logo: cetysLogo,
       alt: "CETYS Universidad"
     }
@@ -54,12 +51,9 @@ const IncubatorsSection = () => {
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">
+                <h3 className="text-lg font-semibold text-foreground">
                   {incubator.name}
                 </h3>
-                <p className="text-sm text-muted-foreground">
-                  {incubator.location}
-                </p>
               </div>
             ))}
           </div>
