@@ -39,16 +39,6 @@ const HeroSection = () => {
             {t('hero.subtitle')}
           </p>
           
-          {/* Enhanced CTA Section */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <Button 
-              variant="hero" 
-              size="lg"
-              className="px-8 py-4 text-lg font-semibold transition-all duration-300"
-            >
-              {t('hero.secondaryCTA', 'Watch Demo')}
-            </Button>
-          </div>
 
         </div>
 
