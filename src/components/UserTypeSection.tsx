@@ -24,13 +24,13 @@ const UserTypeSection = () => {
               </p>
               
               <Button 
-                variant="outline" 
-                size="lg" 
-                className="w-full lg:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhYfex3fl69du129SJ5gszxKNL8EAdIpzDO2DowOyc_F5vrA/viewform', '_blank')}
-              >
-                {t('userTypes.touristButton')}
-              </Button>
+  variant="outline" 
+  size="lg" 
+  className="w-full lg:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+  onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhYfex3fl69du129SJ5gszxKNL8EAdIpzDO2DowOyc_F5vrA/viewform', '_blank')}
+>
+  {t('userTypes.touristButton')}
+</Button>
             </div>
           </Card>
 
@@ -50,10 +50,10 @@ const UserTypeSection = () => {
               </p>
               
               <Button 
-                size="lg" 
-                className="w-full lg:w-auto bg-gradient-to-r from-accent to-success hover:opacity-90 transition-opacity"
-                onClick={() => window.open('https://forms.gle/vZF8Qn691wn5KoQEA', '_blank')}
-              >
+               variant="outline" 
+              size="lg" 
+              className="w-full lg:w-auto border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+  onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeJtUyxm9oNAMnPp0MsQWXmXphD629FOs_UU9VwZU0obDWSew/viewform', '_blank')} >
                 {t('userTypes.bureauButton')}
               </Button>
             </div>

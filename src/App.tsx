@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
 import Faq from "./pages/Faq.tsx";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/NotFound.tsx"; // Fixed: Added .tsx extension
 
 const queryClient = new QueryClient();
 
@@ -18,8 +18,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Faq" element={<Faq />} />
+          {/* Fixed: Changed to lowercase paths for consistency */}
+          <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<Faq />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -17,8 +17,7 @@ const RealEstateSection = () => {
           <Button 
             size="lg" 
             className="px-8 py-3 text-base"
-            onClick={() => window.open('https://forms.gle/jEbXx6eLe7cAxbSP7', '_blank')}
-          >
+            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScty7KeTXG6tFmbaDTITYoUaZEMpVBiOS9KM45yFF57S6bXIw/viewform', '_blank')}          >
             {t('realEstate.button')}
           </Button>
         </div>

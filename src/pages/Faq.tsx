@@ -60,6 +60,20 @@ const DEFAULT_ITEMS: readonly AccordionItem[] = [
   }
 ] as const;
 
+// FAQ Page Component - Main component that includes Header and Footer
+const FAQPage: React.FC = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1">
+        <Accordion searchable={true} allowMultiple={true} />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+// Accordion Component - Pure component without Header/Footer
 const Accordion: React.FC<AccordionProps> = ({ 
   items = DEFAULT_ITEMS, 
   allowMultiple = false,
@@ -118,15 +132,18 @@ const Accordion: React.FC<AccordionProps> = ({
     }
   }, [toggleItem]);
 
+  const clearSearch = useCallback(() => {
+    setSearchTerm('');
+  }, []);
+
   return (
     <div className={`max-w-4xl mx-auto p-6 ${className}`} role="region" aria-label="FAQ Section">
-     <Header />
       <header className="text-center mb-8">
         <div className="flex items-center justify-center gap-3 mb-4">
           <HelpCircle className="w-8 h-8 text-blue-600" aria-hidden="true" />
-          <h2 className="text-3xl font-bold text-gray-900">
+          <h1 className="text-3xl font-bold text-gray-900">
             {t('faq.title', 'Frequently Asked Questions')}
-          </h2>
+          </h1>
         </div>
         <p className="text-gray-600 max-w-2xl mx-auto">
           {t('faq.description', 'Find answers to common questions about JetLock FX. Can\'t find what you\'re looking for? Contact our support team.')}
@@ -146,7 +163,7 @@ const Accordion: React.FC<AccordionProps> = ({
               placeholder={t('faq.searchPlaceholder', 'Search FAQs...')}
               value={searchTerm}
               onChange={handleSearchChange}
-              className="w-full px-4 py-3 pl-10 border border-gray-300 rounded-lg 
+              className="w-full px-4 py-3 pl-10 pr-10 border border-gray-300 rounded-lg 
                        focus:ring-2 focus:ring-blue-500 focus:border-blue-500 
                        transition-colors duration-200
                        invalid:border-red-500 invalid:ring-red-500"
@@ -156,6 +173,18 @@ const Accordion: React.FC<AccordionProps> = ({
               className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" 
               aria-hidden="true" 
             />
+            {searchTerm && (
+              <button
+                type="button"
+                onClick={clearSearch}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 hover:text-gray-600 transition-colors"
+                aria-label="Clear search"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
       )}
@@ -163,27 +192,47 @@ const Accordion: React.FC<AccordionProps> = ({
       {/* Results count */}
       {searchTerm && (
         <div id="search-results" className="mb-4 text-sm text-gray-600" role="status" aria-live="polite">
-          {t('faq.resultsCount', '{{count}} result{{plural}} found', { 
-            count: filteredItems.length,
-            plural: filteredItems.length !== 1 ? 's' : ''
-          })}
+          {filteredItems.length === 0 
+            ? t('faq.noResultsFound', 'No results found for "{{searchTerm}}"', { searchTerm })
+            : t('faq.resultsCount', '{{count}} result{{plural}} found', { 
+                count: filteredItems.length,
+                plural: filteredItems.length !== 1 ? 's' : ''
+              })
+          }
         </div>
       )}
 
       {/* Accordion Items */}
       <div className="space-y-3" role="group" aria-label="FAQ Items">
-        {filteredItems.length === 0 ? (
+        {filteredItems.length === 0 && searchTerm ? (
           <div className="text-center py-12" role="status">
-            <HelpCircle className="w-16 h-16 text-gray-300 mx-auto mb-4" aria-hidden="true" />
+            <Search className="w-16 h-16 text-gray-300 mx-auto mb-4" aria-hidden="true" />
             <h3 className="text-lg font-medium text-gray-900 mb-2">
               {t('faq.noResults', 'No results found')}
             </h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-4">
               {t('faq.noResultsDescription', 'Try adjusting your search terms or browse all questions.')}
+            </p>
+            <button
+              type="button"
+              onClick={clearSearch}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              View All FAQs
+            </button>
+          </div>
+        ) : filteredItems.length === 0 && !searchTerm ? (
+          <div className="text-center py-12" role="status">
+            <HelpCircle className="w-16 h-16 text-gray-300 mx-auto mb-4" aria-hidden="true" />
+            <h3 className="text-lg font-medium text-gray-900 mb-2">
+              {t('faq.noFaqs', 'No FAQs available')}
+            </h3>
+            <p className="text-gray-600">
+              {t('faq.noFaqsDescription', 'FAQ content is being updated. Please check back later.')}
             </p>
           </div>
         ) : (
-          filteredItems.map((item) => (
+          filteredItems.map((item, index) => (
             <div 
               key={item.id} 
               className="border border-gray-200 rounded-xl overflow-hidden 
@@ -248,24 +297,45 @@ const Accordion: React.FC<AccordionProps> = ({
       </div>
 
       {/* Support Section */}
-      <footer className="mt-8 text-center">
-        <p className="text-gray-600 mb-4">
-          {t('faq.stillHaveQuestions', 'Still have questions?')}
-        </p>
-        <button 
-          className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 
-                   text-white rounded-lg hover:bg-blue-700 focus:ring-2 
-                   focus:ring-blue-500 focus:ring-offset-2 transition-colors 
-                   duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-          aria-label={t('faq.contactSupportLabel', 'Contact our support team')}
-        >
-          <HelpCircle className="w-5 h-5" aria-hidden="true" />
-          {t('faq.contactSupport', 'Contact Support')}
-        </button>
+      <footer className="mt-12 text-center">
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8">
+          <HelpCircle className="w-12 h-12 text-blue-600 mx-auto mb-4" aria-hidden="true" />
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            {t('faq.stillHaveQuestions', 'Still have questions?')}
+          </h3>
+          <p className="text-gray-600 mb-6 max-w-md mx-auto">
+            {t('faq.supportDescription', 'Our support team is here to help you with any questions about JetLock FX.')}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button 
+              type="button"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 
+                       text-white rounded-lg hover:bg-blue-700 focus:ring-2 
+                       focus:ring-blue-500 focus:ring-offset-2 transition-colors 
+                       duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              aria-label={t('faq.contactSupportLabel', 'Contact our support team')}
+            >
+              <HelpCircle className="w-5 h-5" aria-hidden="true" />
+              {t('faq.contactSupport', 'Contact Support')}
+            </button>
+            <button 
+              type="button"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white 
+                       text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 
+                       focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors 
+                       duration-200"
+              aria-label="View help documentation"
+            >
+              <Search className="w-5 h-5" aria-hidden="true" />
+              {t('faq.viewDocs', 'View Documentation')}
+            </button>
+          </div>
+        </div>
       </footer>
-      <Footer />
     </div>
   );
 };
 
-export default Accordion;
+// Export both components
+export { FAQPage, Accordion };
+export default FAQPage;

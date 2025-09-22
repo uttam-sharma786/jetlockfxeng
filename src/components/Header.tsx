@@ -50,7 +50,7 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
+            <a href="/about" className="text-foreground/80 hover:text-foreground transition-colors">
               {t('nav.about')}
             </a>
             <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
@@ -62,7 +62,7 @@ const Header = () => {
             <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
               Privacy
             </a>
-            <a href="#" className="text-foreground/80 hover:text-foreground transition-colors">
+            <a href="/faq" className="text-foreground/80 hover:text-foreground transition-colors">
               FAQ
             </a>
           </nav>
