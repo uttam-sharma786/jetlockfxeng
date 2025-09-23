@@ -170,7 +170,7 @@ const Accordion: React.FC<AccordionProps> = ({
               aria-describedby={searchTerm ? "search-results" : undefined}
             />
             <Search 
-              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" 
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-900" 
               aria-hidden="true" 
             />
             {searchTerm && (
