@@ -63,7 +63,7 @@ const Header = () => {
               Privacy
             </a>
             <a href="/faq" className="text-foreground/80 hover:text-foreground transition-colors">
-              FAQ
+              FAQs
             </a>
           </nav>
 
